@@ -1,34 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Music Store</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>Music Store</h1>
-    </header>
-    
-    <main>
-        <section id="products">
-            <!-- Display list of music products for sale -->
-            <!-- Each product should have details like title, artist, price, etc. -->
-            <!-- Include a button to buy or add to cart -->
-        </section>
-        
-        <section id="sell-form">
-            <!-- Form for users to sell their music -->
-            <!-- Include fields for title, artist, price, etc. -->
-            <!-- Use JavaScript to handle form submission -->
-        </section>
-    </main>
-    
-    <footer>
-        <p>&copy; 2023 Music Store</p>
-    </footer>
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
-    <script src="script.js"></script>
-</body>
-</html>
+header, footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+main {
+    padding: 1em;
+}
+
+#products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product {
+    border: 1px solid #ddd;
+    padding: 1em;
+    margin: 1em;
+    width: 300px;
+    text-align: center;
+}
+
+#sell-form {
+    max-width: 600px;
+    margin: 2em auto;
+    padding: 1em;
+    border: 1px solid #ddd;
+}
+
